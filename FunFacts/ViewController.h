@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *funFuctLabel;
+@property (strong, nonatomic) NSArray *facts;
+
+//for my tests
+@property (weak, nonatomic) IBOutlet UILabel *forTest;
 
 @end
 

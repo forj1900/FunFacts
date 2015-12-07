@@ -15,6 +15,7 @@
 		494ACB771BF7E024002ADBA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494ACB751BF7E024002ADBA4 /* LaunchScreen.storyboard */; };
 		494ACB821BF7E024002ADBA4 /* FunFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494ACB811BF7E024002ADBA4 /* FunFactsTests.m */; };
 		494ACB8D1BF7E024002ADBA4 /* FunFactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494ACB8C1BF7E024002ADBA4 /* FunFactsUITests.m */; };
+		494ACB9C1BF93860002ADBA4 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 494ACB9B1BF93860002ADBA4 /* FactBook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		494ACB881BF7E024002ADBA4 /* FunFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		494ACB8C1BF7E024002ADBA4 /* FunFactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunFactsUITests.m; sourceTree = "<group>"; };
 		494ACB8E1BF7E024002ADBA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494ACB9A1BF93860002ADBA4 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
+		494ACB9B1BF93860002ADBA4 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				494ACB6D1BF7E024002ADBA4 /* ViewController.h */,
 				494ACB6E1BF7E024002ADBA4 /* ViewController.m */,
 				494ACB701BF7E024002ADBA4 /* Main.storyboard */,
+				494ACB9A1BF93860002ADBA4 /* FactBook.h */,
+				494ACB9B1BF93860002ADBA4 /* FactBook.m */,
 				494ACB731BF7E024002ADBA4 /* Assets.xcassets */,
 				494ACB751BF7E024002ADBA4 /* LaunchScreen.storyboard */,
 				494ACB781BF7E024002ADBA4 /* Info.plist */,
@@ -272,6 +277,7 @@
 			files = (
 				494ACB6F1BF7E024002ADBA4 /* ViewController.m in Sources */,
 				494ACB6C1BF7E024002ADBA4 /* AppDelegate.m in Sources */,
+				494ACB9C1BF93860002ADBA4 /* FactBook.m in Sources */,
 				494ACB691BF7E024002ADBA4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +502,7 @@
 				494ACB931BF7E024002ADBA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		494ACB941BF7E024002ADBA4 /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				494ACB961BF7E024002ADBA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		494ACB971BF7E024002ADBA4 /* Build configuration list for PBXNativeTarget "FunFactsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				494ACB991BF7E024002ADBA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
