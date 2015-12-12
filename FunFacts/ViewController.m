@@ -14,6 +14,8 @@
 @end
 
 @implementation ViewController
+int currentFact = 0;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +25,7 @@
                   @"Third object",
                   @"Etc",
                   nil];
-    self.funFuctLabel.text = [self.facts objectAtIndex:0];
+    self.funFuctLabel.text = [self.facts objectAtIndex:currentFact];
 
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -36,14 +38,23 @@
 
 - (IBAction)showFunFact {
     
+    if (currentFact == sizeof(self.facts)) currentFact = 0;
+    self.funFuctLabel.text = [self.facts objectAtIndex: currentFact++];
     
-    self.funFuctLabel.text = [self.facts objectAtIndex:1];
+    NSUInteger i = 1;
     
-    self.forTest.text = @"just for test";
-/*
-    for (int i = 0; i<10; i++){
-        self.forTest.text = ;
-    } */
+    NSString *s = @"test";
+    int yourintvalue = 10;
+    
+    NSString *strFromInt = [NSString stringWithFormat:@"%d",yourintvalue];
+    
+    char c = [s characterAtIndex:i];
+    
+    char myChar = 'r';
+    NSString* string = [NSString stringWithFormat:@"%c" , c];
+    
+    self.funFuctLabel.text = string ;
+
 
 }
 
