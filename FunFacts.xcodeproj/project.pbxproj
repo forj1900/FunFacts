@@ -108,10 +108,10 @@
 				494ACB6B1BF7E024002ADBA4 /* AppDelegate.m */,
 				494ACB6D1BF7E024002ADBA4 /* ViewController.h */,
 				494ACB6E1BF7E024002ADBA4 /* ViewController.m */,
-				494ACB701BF7E024002ADBA4 /* Main.storyboard */,
 				494ACB9A1BF93860002ADBA4 /* FactBook.h */,
 				494ACB9B1BF93860002ADBA4 /* FactBook.m */,
 				494ACB731BF7E024002ADBA4 /* Assets.xcassets */,
+				494ACB701BF7E024002ADBA4 /* Main.storyboard */,
 				494ACB751BF7E024002ADBA4 /* LaunchScreen.storyboard */,
 				494ACB781BF7E024002ADBA4 /* Info.plist */,
 				494ACB671BF7E024002ADBA4 /* Supporting Files */,
@@ -212,6 +212,7 @@
 				TargetAttributes = {
 					494ACB631BF7E024002ADBA4 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = QCJ4S4T69R;
 					};
 					494ACB7C1BF7E024002ADBA4 = {
 						CreatedOnToolsVersion = 7.1;
@@ -417,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zh.FunFucts.FunFacts;
@@ -428,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zh.FunFucts.FunFacts;

@@ -8,26 +8,23 @@
 
 #import "ViewController.h"
 #include <Security/SecBase.h>
+#import "FactBook.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-int currentFact = 0;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.facts = [[NSArray alloc] initWithObjects:
-                  @"First fact",
-                  @"Second object",
-                  @"Third object",
-                  @"Etc",
-                  nil];
-    self.funFuctLabel.text = [self.facts objectAtIndex:currentFact];
-
     // Do any additional setup after loading the view, typically from a nib.
+
+    self.factBook = [[FactBook alloc] init];
+
+    NSString *textOfFact = [self.factBook newFact];
+    self.funFuctLabel.text = textOfFact;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,25 +34,29 @@ int currentFact = 0;
 
 
 - (IBAction)showFunFact {
-    
-    if (currentFact == sizeof(self.facts)) currentFact = 0;
-    self.funFuctLabel.text = [self.facts objectAtIndex: currentFact++];
-    
-    NSUInteger i = 1;
-    
-    NSString *s = @"test";
-    int yourintvalue = 10;
-    
-    NSString *strFromInt = [NSString stringWithFormat:@"%d",yourintvalue];
-    
-    char c = [s characterAtIndex:i];
-    
-    char myChar = 'r';
-    NSString* string = [NSString stringWithFormat:@"%c" , c];
-    
-    self.funFuctLabel.text = string ;
-
-
+    NSString *textOfFact = [self.factBook newFact];
+    self.funFuctLabel.text = textOfFact;
 }
 
 @end
+
+/*
+ // it will show fact char by char
+ 
+ for (NSUInteger i = 0; i < sizeof(textOfFact)-1; i++){
+ char currentChar = [textOfFact characterAtIndex:i];
+ 
+ NSString *stringFromChar = [NSString stringWithFormat:@"%c", currentChar];
+ self.funFuctLabel.text = [self.funFuctLabel.text stringByAppendingString:stringFromChar];
+ }
+ */
+
+/*
+ // make delay
+ NSDate *future = [NSDate dateWithTimeIntervalSinceNow: 0.6 ];
+ [NSThread sleepUntilDate:future];
+ 
+ 
+ // end of delay
+ */
+
